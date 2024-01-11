@@ -26,10 +26,32 @@
 
 
 
-function ten(food) {
-    for (let i = 0; i < 10; i++) {
+// function ten(food) {
+//     for (let i = 0; i < 10; i++) {
+//     console.log(food);
+//      }
+//  }
+
+// const tenPotatoes = ten('Aguacate');
+
+
+// Fase 3
+// Joé, si puedo pasar a mi función la palabra que quiero escribir, pues voy a querer más: ahora mismo si le paso una palabra me la escribe 10 veces, pero ¿y si quisiese que me la escribiese diferente número de veces cada vez?
+
+// ¿Qué tendría que hacer para que al llamar a mi función de estas formas escribiese las palabras el numero de veces que le diga?
+
+// ten('patata', 10);
+// ten('aguacate', 7);
+// ten('Pizza', 50);
+// Una vez conseguido renombraremos la función ten a writeThis;
+
+
+function writeThis(food, x) {
+    for (let i = 0; i < x; i++) {
     console.log(food);
      }
  }
 
-const tenPotatoes = ten('Aguacate');
+const tenPotatoes = writeThis('Pizza', 34);
+const tenPotatoes1 = writeThis('Aguacate', 23);
+
