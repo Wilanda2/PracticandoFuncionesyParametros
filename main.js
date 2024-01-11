@@ -46,12 +46,44 @@
 // Una vez conseguido renombraremos la función ten a writeThis;
 
 
-function writeThis(food, x) {
-    for (let i = 0; i < x; i++) {
+// function writeThis(food, x) {
+//     for (let i = 0; i < x; i++) {
+//     console.log(food);
+//      }
+//  }
+
+// const tenPotatoes = writeThis('Pizza', 34);
+// const tenPotatoes1 = writeThis('Aguacate', 23);
+
+
+
+// Fase 4
+// Ahora hemos visto que a una función le podemos pasar datos en crudo a través de los parámetros. Además podríamos pasar estos datos si ya los tuviésemos almacenados en constantes e ¡¡¡incluso funciones que nos devuelvan datos!!!
+
+// ¡Qué locura! ¿Cómo es eso de la funciones? Vamos a rescatar a nuestra querida getRandomNumber() del ejercicio de evaluación intermedia, para quien no se acuerde era algo como:
+
+// function getRandomNumber(max) {
+//   return Math.ceil(Math.random() * max);
+// }
+// Esta función generaba un número aleatorio de 0 al número que le pasemos por parámetro.
+
+// ¿Qué le tendríamos que escribir en nuestra función writeThis para que nos escribiese las palabras que le pasamos un número random de veces de 0 a 10?
+
+function getRandomNumber(max) {
+    return Math.ceil(Math.random() * max);
+}
+
+const random1 = getRandomNumber(50);
+const random2 = getRandomNumber(50);
+const random3 = getRandomNumber(50);
+
+
+function writeThis(food, random) {
+    for (let i = 0; i < random; i++) {
     console.log(food);
      }
  }
 
-const tenPotatoes = writeThis('Pizza', 34);
-const tenPotatoes1 = writeThis('Aguacate', 23);
-
+const randomFood1 = writeThis('Pizza', random1);
+const randomFood2 = writeThis('Aguacate', random2);
+const randomFood3 = writeThis('Potato', random3);
